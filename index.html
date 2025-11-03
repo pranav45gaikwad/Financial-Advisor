@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinAdvisor - Your Financial Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- --------- Header Section ---------- -->
+     <header>
+        <nav>
+            <div class="logo"> Financial Advisor </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Market Portfolio</a></li>
+                <li><a href="#advisors">Advisors</a></li>
+                <li><a href="#calculator">Calculators</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact" class="contact-button">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- -------- Main Section -------- -->
+    <main>
+        <section id="home">
+            <div class="home-content">
+                <h1>Secure Your Future With <span id="name"> Financial Advisor A.K.A FinAdvisor</span></h1>
+                <p>Expert financial planning and investment strategies tailored for you.</p>
+              
+                <a href="#advisors" class="contact-button">Meet Our Advisors</a>
+            </div>
+        </section>
+
+    <!-- ------------ port folio ------------ -->
+        <section id="portfolio" class="content-section">
+            <h2>Market Portfolio</h2>
+            <p class="section-subtitle">
+                <strong>Note:</strong> This is static placeholder data. If you want live market data. Then Visit <a href="groww">Groww</a>
+            </p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Stock / Index</th>
+                            <th>Ticker</th>
+                            <th>Price (USD)</th>
+                            <th>Change (%)</th>
+                            <th>Market Cap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Apple Inc.</td>
+                            <td>AAPL</td>
+                            <td>$214.29</td>
+                            <td class="positive">+1.22%</td>
+                            <td>$3.28T</td>
+                        </tr>
+                        <tr>
+                            <td>NIFTY 50 (Index)</td>
+                            <td>^NSEI</td>
+                            <td>$22,519.40</td>
+                            <td class="negative">-0.31%</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Corp.</td>
+                            <td>MSFT</td>
+                            <td>$427.87</td>
+                            <td class="positive">+0.65%</td>
+                            <td>$3.18T</td>
+                        </tr>
+                        <tr>
+                            <td>Reliance Industries</td>
+                            <td>RELIANCE.NS</td>
+                            <td>$2,910.50</td>
+                            <td class="positive">+0.25%</td>
+                            <td>$19.69T</td>
+                        </tr>
+                        <tr>
+                            <td>Gold (Spot)</td>
+                            <td>XAU/USD</td>
+                            <td>$2,319.80</td>
+                            <td class="negative">-0.54%</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ---------- Advisors Page --------- -->
+       
+        <section id="advisors" class="content-section">
+            <h2>Meet Our Financial Advisors</h2>
+            <div class="advisor-grid">
+                <div class="advisor-card">
+                    <img src="./Images/profile_icon.jpg" alt="Financial Advisor Pranav Gaikwad">
+                    <div class="advisor-info">
+                        <h3>Pranav Gaikwad, CA</h3>
+                        <p>Senior Wealth Manager</p>
+                    </div>
+                </div>
+                <div class="advisor-card">
+                    <img src="./Images/profile_icon.jpg" alt="Financial Advisor Anup Awatade">
+                    <div class="advisor-info">
+                        <h3>Anup Awatade , Bussiness Analytics</h3>
+                        <p>Retirement Specialist</p>
+                    </div>
+                </div>
+                <div class="advisor-card">
+                    <img src="./Images/profile_icon.jpg" alt="Financial Advisor Shlok Jambilkar">
+                    <div class="advisor-info">
+                        <h3>Shlok Jambilkar, MBA</h3>
+                        <p>Investment Strategist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------ Calculation Page ----- -->
+        <section id="calculator" class="content-section">
+            <h2>Investment Calculators</h2>
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <h3>SIP Calculator</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="sip-amount">Monthly Investment ($)</label>
+                            <input type="number" id="sip-amount" placeholder="e.g., 500">
+                        </div>
+                        <div class="form-group">
+                            <label for="sip-rate">Expected Return Rate (% p.a.)</label>
+                            <input type="number" id="sip-rate" placeholder="e.g., 12">
+                        </div>
+                        <div class="form-group">
+                            <label for="sip-time">Time Period (Years)</label>
+                            <input type="number" id="sip-time" placeholder="e.g., 10">
+                        </div>
+                        <button type="button" class="contact-button">Calculate</button>
+                    </form>
+                </div>
+                <div class="calculator-results">
+                    <h3>Projected Wealth</h3>
+                    <div class="result-display">
+                        <p>Invested Amount</p>
+                        <span>&#8377; 0</span>
+                    </div>
+                    <div class="result-display">
+                        <p>Est. Returns</p>
+                        <span>&#8377; 0</span>
+                    </div>
+                    <div class="result-display total">
+                        <p>Total Value</p>
+                        <span>&#8377; 0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+        <section id="about" class="content-section">
+            <h2>About Financial Advisor</h2>
+            <div class="about-content">
+                <p>Founded in 2025, FinAdvisor has one mission: to demystify finance and make expert investment advice accessible to everyone. We believe in building long-term relationships based on trust, transparency, and a commitment to your financial goals.</p>
+                <p>Our team of certified advisors uses data-driven strategies to help you navigate market volatility and build a resilient portfolio for a secure future.</p>
+            </div>
+        </section>
+   </main>
+
+    <footer id="contact">
+        <p>&copy; 2025 FinAdvisor. All rights reserved. | Made With <span id="heart">&hearts;</span>  by <span id="pran">Team Pseudonymous</span> 
+    </footer> 
+
+</body>
+</html>
