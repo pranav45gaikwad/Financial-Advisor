@@ -411,6 +411,74 @@ footer {
 }
 
 
+/* ---------- Sign-Up Page Styles ------ */
+
+.logo-link {
+    text-decoration: none;
+}
+
+.signup-main {
+    padding-top: 150px; /* Offset for fixed header */
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f4f4; /* A light background for the page */
+}
+
+.signup-container {
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    /* Animation */
+    animation: fadeInUp 1s ease-out;
+}
+
+.signup-container h2 {
+    color: rgb(149, 5, 149); /* Match your H2 style */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.signup-container p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.signup-form {
+    text-align: left;
+}
+
+.signup-form .contact-button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+}
+
+.login-prompt {
+    margin-top: 2rem;
+    font-size: 1rem !important; /* Overriding default */
+}
+
+.login-prompt a {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-prompt a:hover {
+    text-decoration: underline;
+}
+
+
  /* ---------- Keyframe Animations ------ */
 
  @keyframes fadeInDown {

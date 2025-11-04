@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - FinAdvisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo"> Financial Advisor </div>
+            </a>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#portfolio">Market Portfolio</a></li>
+                <li><a href="index.html#advisors">Advisors</a></li>
+                <li><a href="index.html#calculator">Calculators</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="signup.html" class="contact-button active">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="signup-main">
+        <div class="signup-container">
+            <h2>Create Your Account</h2>
+            <p>Join FinAdvisor and start planning your future today.</p>
+            
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="e.g., Pranav Gaikwad" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="e.g., pranav@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a strong password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Re-type your password" required>
+                </div>
+                <button type="submit" class="contact-button"><a href="index.html">Sign Up</a></button>
+            </form>
+
+            <p class="login-prompt">
+                Already have an account? <a href="#">Log In</a>
+            </p>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2025 FinAdvisor. All rights reserved. | Made With <span id="heart">&hearts;</span>  by <span id="pran">Team Pseudonymous</span></p>
+    </footer>
+
+</body>
+</html>

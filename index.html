@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinAdvisor - Your Financial Advisor</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
                 <li><a href="#advisors">Advisors</a></li>
                 <li><a href="#calculator">Calculators</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#contact" class="contact-button">Get Started</a></li>
+                <li><a href="signup.html" class="contact-button">Get Started</a></li>
             </ul>
         </nav>
     </header>
@@ -141,22 +142,22 @@
                             <label for="sip-time">Time Period (Years)</label>
                             <input type="number" id="sip-time" placeholder="e.g., 10">
                         </div>
-                        <button type="button" class="contact-button">Calculate</button>
+                        <button type="button" class="contact-button" id="calculate-sip">Calculate</button>
                     </form>
                 </div>
                 <div class="calculator-results">
                     <h3>Projected Wealth</h3>
                     <div class="result-display">
                         <p>Invested Amount</p>
-                        <span>&#8377; 0</span>
+                        <span id="invested-amount">&#8377; 0</span>
                     </div>
                     <div class="result-display">
                         <p>Est. Returns</p>
-                        <span>&#8377; 0</span>
+                        <span id="estimated-returns">&#8377; 0</span>
                     </div>
                     <div class="result-display total">
                         <p>Total Value</p>
-                        <span>&#8377; 0</span>
+                        <span id="total-value">&#8377; 0</span>
                     </div>
                 </div>
             </div>
